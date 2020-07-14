@@ -62,15 +62,15 @@ f_pcap.close()
 f_raw.close()
 ```
 
-Finally use `sox` to convert the .raw files into .wav:
+Finally use [sox](http://sox.sourceforge.net/) to convert the .raw files into .wav:
 
 ```bash
-sox -t raw -r 8100 -e signed-integer -b 16 -L -c 1 recv.raw recv.wav
+➜  sox -t raw -r 8100 -e signed-integer -b 16 -L -c 1 recv.raw recv.wav
 ```
 
 giving [sent.wav](sent.wav) and [recv.wav](recv.wav).
 
-Playing back sent.wav we can hear the suspect mention that their new password is `applepie`; MD5 this and wrap it in flag format:
+Playing back sent.wav we can hear the suspect mention that their new password is "applepie"; just MD5 this and wrap it in flag format:
 
 ```bash
 ➜  pi3 echo -n applepie | md5sum
