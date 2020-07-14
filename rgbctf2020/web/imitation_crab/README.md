@@ -4,7 +4,7 @@
 
 > Flag should be modified to fit the rgbCTF format (rgbCTF{flag}, underscores between words)
 > [http://challenge.rgbsec.xyz:7939/](http://challenge.rgbsec.xyz:7939/)
-
+>
 > ~BobbaTea#6235
 
 ## Solution
