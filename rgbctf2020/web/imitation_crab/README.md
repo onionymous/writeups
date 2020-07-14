@@ -17,7 +17,7 @@ Checking `/robots.txt`, we are pointed to
 ```
 /static/export.har
 ```
-We can download this file ([export.har](export.har)), it is in [HTTP archive format](https://en.wikipedia.org/wiki/HAR_(file_format).
+We can download this file ([export.har](export.har)), it is in [HTTP archive format](https://en.wikipedia.org/wiki/HAR_(file_format)).
 
 Using something like Google's [HAR Analyzer](https://toolbox.googleapps.com/apps/har_analyzer/) we can examine the HTTP requests (should have probably written a script to automate this though); in particular the ones to `/search`:
 
