@@ -11,17 +11,17 @@
 
 We see a website with an onscreen keyboard. Pressing any key sends a POST request to the `/search` endpoint with the ASCII character code of the key being pressed:
 
-![ss1](ss1.png)
+![ss1](images/ss1.png)
 
 Checking `/robots.txt`, we are pointed to
 ```
 /static/export.har
 ```
-We can download this file ([export.har](export.har)), it is in HTTP archive format].
+We can download this file ([export.har](export.har)), it is in [HTTP archive format](https://en.wikipedia.org/wiki/HAR_(file_format).
 
-I should have probably written a script to automate this, but using something like Google's [HAR Analyzer](https://toolbox.googleapps.com/apps/har_analyzer/) we can examine the HTTP requests; in particular the ones to `/search`:
+Using something like Google's [HAR Analyzer](https://toolbox.googleapps.com/apps/har_analyzer/) we can examine the HTTP requests (should have probably written a script to automate this though); in particular the ones to `/search`:
 
-![ss2](ss2.png)
+![ss2](images/ss2.png)
 
 Converting the char codes to text, we get:
 

@@ -14,7 +14,7 @@ _Note: this is a non-standard/unintended solution. Judging from the flag I guess
 
 Visiting the site we see a tic-tac-toe game; in the sources there is an JavaScript file named `obf.js`.
 
-![ss1](ss1.png)
+![ss1](images/ss1.png)
 
 Using [jsnice.org](jsnice.org) we can partially deobfuscate the code; revealing an interesting base64-encoded string in the source:
 

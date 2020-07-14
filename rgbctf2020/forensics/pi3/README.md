@@ -23,9 +23,10 @@ data: BTSnoop version 1,
 
 So we can use `btmon -r data` to read the data, revealing that the protocol is [SCO](https://en.wikipedia.org/wiki/List_of_Bluetooth_protocols#Synchronous_Connection-Oriented_(SCO)_link):
 
-![ss1](ss1.png)
+![ss1](images/ss1.png)
 
 At this point we know we need to extract audio from the data. Opening the btsnoop data in Wireshark allows us to inspect the individual SCO packets:
+![ss2](images/ss2.png)
 
 Aside from the configuration packets at the start, the data packets all have a length of 51. There are also two streams, which we can observe from the two types of packets, `Sent` and `Rcvd`. We can also see that all Bluetooth HCI SCO packets have a 3 byte header of `01 01 30`.
 
