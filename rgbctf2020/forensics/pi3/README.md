@@ -23,7 +23,7 @@ data: BTSnoop version 1,
 
 So we can use `btmon -r data` to read the data, revealing that the protocol is [SCO](https://en.wikipedia.org/wiki/List_of_Bluetooth_protocols#Synchronous_Connection-Oriented_(SCO)_link):
 
-![GitHub Logo](ss1.png)
+![ss1](ss1.png)
 
 At this point we know we need to extract audio from the data. Opening the btsnoop data in Wireshark allows us to inspect the individual SCO packets:
 
